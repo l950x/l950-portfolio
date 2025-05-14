@@ -46,6 +46,7 @@
   .about {
     display: flex;
     flex-direction: column-reverse;
+    animation: none;
   }
   .about-text {
     width: 80%;

@@ -49,6 +49,7 @@ body::-webkit-scrollbar {
   margin-top: 15rem;
   margin-left: 9.5rem;
   width: 45vw;
+  animation: slide-in 0.5s ease-in-out;
 }
 
 .title {
@@ -169,6 +170,11 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  display: none;
+}
+.about-animation {
+  display: flex;
+  animation: opacity-in 1s ease-in-out;
 }
 .about h1 {
   text-align: center;

@@ -221,13 +221,16 @@
         const header = document.querySelector("header");
         const aboutSection = document.querySelector("#about");
         const body = document.body;
+        const about = document.querySelector(".about");
 
         const observer = new IntersectionObserver(
           function (entries) {
             entries.forEach((entry) => {
               if (entry.isIntersecting) {
+
                 header.classList.add("black");
                 body.classList.add("video-hidden");
+                about.classList.add("about-animation");
               } else {
                 header.classList.remove("black");
                 body.classList.remove("video-hidden");
