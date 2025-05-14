@@ -14,13 +14,32 @@
   height: 100%;
   overflow: hidden;
   z-index: -1;
+  transition: background-color 1s ease;
+  background-color: transparent;
+}
+
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease;
+  opacity: 1;
+}
+
+.video-hidden #background-video {
+  opacity: 0;
+}
+
+body.video-hidden {
+  background-color: black;
+  transition: background-color 1s ease;
 }
 
 html {
   scroll-behavior: smooth;
 }
 body {
-  background: #081c29;
+  background: #000000;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -117,17 +136,11 @@ body::-webkit-scrollbar {
   height: 70vh;
 }
 
-.colorsecondbody {
-  padding: 5rem 0;
-  /* background: #ff0000; */
-  background: #000;
-  height: 70vh;
-}
-
 .about-color {
   position: relative;
   overflow: hidden;
   /* background: #ff0000; */
+  margin-top: 6rem;
 }
 .about-video-background {
   position: absolute;
@@ -152,7 +165,7 @@ body::-webkit-scrollbar {
   z-index: 1; /* margin: 7rem 0; */
   /* height: 50vh; */
   /* background: #000ced; */
-  padding: 5rem 0;	
+  padding: 5rem 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

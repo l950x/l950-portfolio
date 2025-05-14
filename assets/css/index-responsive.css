@@ -37,11 +37,20 @@
   }
 
   .image img {
-    width: 40vw;
+    width: 15vw;
   }
 
   .contact-ctn {
     flex-direction: column;
+  }
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about-text {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -97,6 +106,9 @@
     padding: 0.2em 2.7em;
     font-size: 0.8rem;
   }
+  .about-description {
+    font-size: 1.35rem;
+  }
 }
 @media screen and (max-width: 635px) {
   .offer {
@@ -127,7 +139,11 @@
     margin-bottom: 2rem;
   }
   .image img {
-    width: 60vw;
+    width: 20vw;
+  }
+  .about-description {
+    font-size: 1.2rem;
+    line-height: 1.5;
   }
 
   .feature {
@@ -147,6 +163,12 @@
 }
 
 @media screen and (max-width: 433px) {
+  .about-color {
+    margin: 0;
+  }
+  .image img {
+    display: none;
+  }
   .title {
     font-size: 2rem;
   }
@@ -155,10 +177,13 @@
   }
 
   .firstbody {
-    width: 80vw;
+    width: 90vw;
   }
   .about-description {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+  }
+  .secondbody {
+    height: 85vh;
   }
   .fouthbody {
     padding: 80px 10px;
@@ -182,9 +207,7 @@
   .discord .discord-btn {
     margin-top: 1.4rem;
   }
-  
 }
-
 @media screen and (min-height: 667px) {
   .firstbody {
     margin-top: 10rem;
@@ -193,15 +216,20 @@
   .firstbody-text {
     margin-top: 15rem;
   }
-
-  .secondbody {
-    /* padding: 80px 80px; */
-  }
 }
 
 @media screen and (min-height: 844px) {
+  .image img {
+    display: none;
+  }
   .secondbody {
-    padding: 180px 50px;
+    height: 75vh;
+  }
+  .about-text {
+    width: 90%;
+  }
+  .about-description {
+    font-size: 1.4rem;
   }
   .firstbody-text {
     margin-top: 20rem;
