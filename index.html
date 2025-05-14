@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/animation.css" />
+    <link rel="stylesheet" href="assets/css/navbar-responsive.css" />
+    <link rel="stylesheet" href="assets/css/index-responsive.css" />
+    <link rel="icon" href="assets/img/logo.ico" />
+    <title>𝐥𝟗𝟓𝟎</title>
+  </head>
+  <body>
+    <div class="video-background">
+      <video id="background-video" autoplay muted loop playsinline>
+        <source src="assets/Connections_v2.mp4" type="video/mp4" />
+        Your browser does not support the HTML5 video.
+      </video>
+    </div>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#">l.950</a>
+        </div>
+        <input type="checkbox" id="nav-check" class="nav-check" />
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Projects</a></li>
+          <!-- <li><a href="#prices">Prices</a></li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="firstbody" class="firstbody">
+      <div class="firstbody-text">
+        <p class="title">
+          l.<span style="color: var(--first-color)">950</span>
+        </p>
+        <p class="subtitle">Web and software developer</p>
+        <p class="description">
+          I've been creating web and software projects since ~2019<br
+            class="description-br"
+          />
+          driven by a real passion for coding and technology
+        </p>
+      </div>
+      <div class="btn">
+        <a class="btn1" href="#services">Projects</a>
+        <a class="btn2" href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="secondbody" id="about">
+      <div class="colorsecondbody">
+        <!-- <div class="about-color"> -->
+        <div class="about-color">
+          <div class="about-video-background">
+            <video autoplay muted loop playsinline>
+              <source src="assets/Frequency.mp4" type="video/mp4" />
+              Your browser does not support the HTML5 video.
+            </video>
+          </div>
+          <div class="about">
+            <!-- <h1>About</h1> -->
+            <div class="image">
+              <img src="assets/img/cmd.gif" alt="" />
+            </div>
+            <div class="about-text">
+              <!-- <p class="about-subtitle">About Me</p> -->
+              <p class="about-description">
+                I'm a passionate developer who enjoys building all kinds of
+                projects — from <span>automation scripts</span> and
+                <span>AI-powered bots</span> to <span>small games</span> and
+                <span>unique software</span>. Since <span>2019</span>, I've been
+                exploring ways to make tech more <span>useful</span>,
+                <span>creative</span>, and <span>fun</span>.<br /><br />
+                I develop using <span>PHP</span>, <span>JavaScript</span>,
+                <span>Node.js</span>, and <span>Python</span>, and I work with
+                modern frameworks like <span>React.js</span> and
+                <span>Symfony</span>.
+                <a href="#services"
+                  ><button class="about-btn">Projects</button></a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services" class="thirdbody">
+      <h1>Services</h1>
+      <div class="features">
+        <div class="feature" id="feature1">
+          <img class="feature-img" src="assets/img/qpanelv1.jpg" alt="" />
+          <div class="feature-menu" id="feature-menu1">
+            <h2>QPanel-Discordbot</h2>
+            <p>
+              AI-based Discord bot with multi-tools. Replies to messages,
+              generates images, sends SMS/emails, creates voices and more
+            </p>
+          </div>
+          <div class="feature-btn">
+            <a
+              class="btn1"
+              id="buy-btn"
+              href="https://github.com/l950x/QPanel-discordbot-preview"
+              >Github</a
+            >
+            <a
+              class="btn2"
+              id="feature-btn"
+              href="javascript:void(0);"
+              onclick="toggleFeatureMenu('feature1')"
+              >About</a
+            >
+          </div>
+        </div>
+
+        <div class="feature" id="feature2">
+          <img class="feature-img" src="assets/img/qpanelw1.jpg" alt="" />
+          <div class="feature-menu" id="feature-menu2">
+            <h2>QPanel-Website</h2>
+            <p>
+              QPanel is built with ReactJS and Symfony PHP, offering services
+              for managing social media, SMS, email, and voices. It provides an
+              intuitive interface for tasks like media boosting, message
+              spoofing, email sender, and voice interactions.
+            </p>
+          </div>
+          <div class="feature-btn">
+            <a class="btn1" href="https://github.com/l950x/QPanel">Github</a>
+            <a
+              class="btn2"
+              href="javascript:void(0);"
+              onclick="toggleFeatureMenu('feature2')"
+              >About</a
+            >
+          </div>
+        </div>
+        <div class="feature" id="feature3">
+          <img class="feature-img" src="assets/img/mediastream.jpg" alt="" />
+          <div class="feature-menu" id="feature-menu2">
+            <h2>MediaStream</h2>
+            <p>
+              MediaStream is a Discord bot for displaying multimedia content
+              (text, images, videos, audio) on Streamlabs/OBS scenes. It allows
+              real-time control over streams, featuring media previews,
+              verification, and interactive overlays.
+            </p>
+          </div>
+          <div class="feature-btn">
+            <a class="btn1" href="https://github.com/l950x/MediaStream"
+              >Github</a
+            >
+            <a
+              class="btn2"
+              href="javascript:void(0);"
+              onclick="toggleFeatureMenu('feature3')"
+              >About</a
+            >
+          </div>
+        </div>
+        <div class="feature" id="feature1">
+          <img class="feature-img" src="assets/img/autoacccept.png" alt="" />
+          <div class="feature-menu" id="feature-menu1">
+            <h2>Snapchat-Autoaccept</h2>
+            <p>
+              Snapchat Bot automates tasks on Snapchat using Selenium. It
+              features auto-accepting friend requests, sending messages (AI or
+              custom), and tracking followers. Future updates include story
+              scheduling and friend deletion.
+            </p>
+          </div>
+          <div class="feature-btn">
+            <a class="btn1" id="buy-btn" href="#prices">Github</a>
+            <a
+              class="btn2"
+              id="feature-btn"
+              href="javascript:void(0);"
+              onclick="toggleFeatureMenu('feature1')"
+              >About</a
+            >
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="fifthbody">
+      <h1>Contact</h1>
+      <div class="contact-ctn">
+        <div class="discord">
+          <a >
+            <img
+              style="border-radius: 50%"
+              src="assets/img/profile-picture.png"
+              alt=""
+            />
+            <h1 class="discord-title">l.950</h1>
+            <p class="discord-text">
+              if you want to chat, you can add me on
+              <span style="color: var(--first-color)">Discord</span> with my
+              name up there
+            </p>
+            <p class="discord-btn">l950x.pro@gmail.com</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("contextmenu", function (event) {
+          event.preventDefault();
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbar = document.querySelector("nav");
+        const header = document.querySelector("header");
+        const aboutSection = document.querySelector("#about");
+
+        const observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                header.classList.add("black");
+              } else {
+                header.classList.remove("black");
+              }
+            });
+          },
+          {
+            threshold: 0.3,
+          }
+        );
+
+        if (aboutSection) {
+          observer.observe(aboutSection);
+        }
+      });
+    </script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/services.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/title.js"></script>
+  </body>
+</html>

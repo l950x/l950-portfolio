@@ -1,0 +1,218 @@
+@media screen and (max-width: 1528px) {
+  .choice button {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1466px) {
+  .firstbody {
+    margin-left: 5rem;
+    width: 65vw;
+  }
+  .choice {
+    margin-top: 0;
+    justify-content: center;
+  }
+  .offer {
+    width: 400px;
+    height: 470px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .firstbody {
+    margin: 15rem auto;
+    width: 80vw;
+    text-align: center;
+    height: 30vh;
+  }
+  .btn {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 843px) {
+  .firstbody {
+    width: 90vw;
+  }
+
+  .image img {
+    width: 40vw;
+  }
+
+  .contact-ctn {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .description-br {
+    display: none;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .firstbody {
+    width: 60vw;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+  .subtitle-br {
+    display: block;
+  }
+
+  .btn .btn1 {
+    margin-right: 1rem;
+  }
+
+  .feature {
+    width: 440px;
+    height: 150px;
+  }
+
+  .feature-menu p {
+    font-size: 0.8rem;
+  }
+
+  .feature-menu h2 {
+    font-size: 1rem;
+  }
+
+  .feature-menu {
+    padding: 0.5rem;
+  }
+
+  .feature-btn .btn2 {
+    padding: 0.2em 2.7em;
+    font-size: 0.8rem;
+  }
+  .feature-btn .btn1 {
+    padding: 0.2em 2.7em;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 635px) {
+  .offer {
+    width: 320px;
+    height: 430px;
+  }
+}
+@media screen and (max-width: 543px) {
+  .btn {
+    flex-direction: column;
+  }
+  .fouthbody {
+    padding: 80px 40px;
+  }
+
+  .btn .btn1 {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .about-subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  .about-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  .image img {
+    width: 60vw;
+  }
+
+  .feature {
+    width: 340px;
+    height: 150px;
+  }
+  .feature-btn .btn1 {
+    padding: 0.2em 1.8em;
+  }
+  .feature-btn .btn2 {
+    padding: 0.2em 1.8em;
+  }
+
+  .feature-menu p {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 433px) {
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 0.7rem;
+  }
+
+  .firstbody {
+    width: 80vw;
+  }
+  .about-description {
+    font-size: 0.8rem;
+  }
+  .fouthbody {
+    padding: 80px 10px;
+  }
+
+  .offer {
+    width: 280px;
+    height: 410px;
+  }
+  .fifthbody .discord {
+    width: 280px;
+    height: 410px;
+  }
+  .discord .discord-title {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  .discord .discord-text {
+    margin-top: 1rem;
+  }
+  .discord .discord-btn {
+    margin-top: 1.4rem;
+  }
+  
+}
+
+@media screen and (min-height: 667px) {
+  .firstbody {
+    margin-top: 10rem;
+    padding: 0;
+  }
+  .firstbody-text {
+    margin-top: 15rem;
+  }
+
+  .secondbody {
+    /* padding: 80px 80px; */
+  }
+}
+
+@media screen and (min-height: 844px) {
+  .secondbody {
+    padding: 180px 50px;
+  }
+  .firstbody-text {
+    margin-top: 20rem;
+  }
+  .fouthbody {
+    padding: 180px 10px;
+  }
+}
+
+@media screen and (min-height: 932px) {
+  .secondbody {
+    padding: 210px 40px;
+  }
+}

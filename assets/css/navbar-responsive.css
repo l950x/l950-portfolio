@@ -1,0 +1,19 @@
+@media screen and (max-width: 1024px) {
+    nav {
+      width: 90vw;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .nav-btn {
+      display: block;
+    }
+  
+    .nav-check:checked ~ .nav-links {
+      display: flex;
+    }
+  }
