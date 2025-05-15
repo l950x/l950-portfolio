@@ -37,6 +37,15 @@
           <li><a href="#services">Projects</a></li>
           <!-- <li><a href="#prices">Prices</a></li> -->
           <li><a href="#contact">Contact</a></li>
+          <li style="display: none;">
+            <a
+              id="colorButton"
+              style="background: none; border: none; cursor: pointer"
+            >
+              <iconify-icon icon="mdi:color" width="25"></iconify-icon>
+            </a>
+            <input type="color" id="colorPicker" style="display: none" />
+          </li>
         </ul>
       </nav>
     </header>
@@ -46,7 +55,6 @@
         <p class="title">
           l.<span style="color: var(--first-color)">950</span>
         </p>
-        <p class="subtitle">Web and software developer</p>
         <p class="description">
           I've been creating web and software projects since ~2019<br
             class="description-br"
@@ -366,6 +374,18 @@
       </div>
     </div>
     <script>
+      const colorButton = document.getElementById("colorButton");
+      const colorPicker = document.getElementById("colorPicker");
+
+      colorButton.addEventListener("click", () => {
+        colorPicker.click();
+      });
+
+      colorPicker.addEventListener("input", (event) => {
+        const color = event.target.value;
+        document.documentElement.style.setProperty("--first-color", color);
+      });
+
       document.addEventListener("DOMContentLoaded", function () {
         document.addEventListener("contextmenu", function (event) {
           event.preventDefault();
