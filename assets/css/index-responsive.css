@@ -1,5 +1,5 @@
 @media screen and (max-width: 1528px) {
-  .choice button {
+  .project-btn-ctn button {
     font-size: 0.8rem;
   }
 }
@@ -8,14 +8,6 @@
   .firstbody {
     margin-left: 5rem;
     width: 65vw;
-  }
-  .choice {
-    margin-top: 0;
-    justify-content: center;
-  }
-  .offer {
-    width: 400px;
-    height: 470px;
   }
 }
 
@@ -28,6 +20,9 @@
   }
   .btn {
     justify-content: center;
+  }
+  .project {
+    margin: 1rem;
   }
 }
 
@@ -112,9 +107,8 @@
   }
 }
 @media screen and (max-width: 635px) {
-  .offer {
-    width: 320px;
-    height: 430px;
+  .project {
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 543px) {
@@ -164,6 +158,13 @@
 }
 
 @media screen and (max-width: 433px) {
+  .info-panel {
+    padding: 1rem;
+    height: 64%;
+  }
+  .info-content {
+    font-size: 0.85rem;
+  }
   .about-color {
     margin: 0;
   }
@@ -189,10 +190,14 @@
   .fouthbody {
     padding: 80px 10px;
   }
+  .project-btn-ctn {
+    margin-top: 1rem;
+  }
 
-  .offer {
+  .project {
     width: 280px;
     height: 410px;
+    margin-top: 1rem;
   }
   .fifthbody .discord {
     width: 280px;

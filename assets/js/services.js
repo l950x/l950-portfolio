@@ -2,7 +2,7 @@
 function toggleFeatureMenu(event) {
     const feature = event.currentTarget.closest(".feature");
     const menu = feature.querySelector(".feature-menu");
-    const buyBtn = feature.querySelector(".btn1");
+    const contactBtn = feature.querySelector(".btn1");
     const featuresBtn = feature.querySelector(".btn2");
     const featureImg = feature.querySelector(".feature-img");
   
@@ -19,7 +19,7 @@ function toggleFeatureMenu(event) {
         { once: true }
       );
   
-      buyBtn.style.display = "inline-block";
+      contactBtn.style.display = "inline-block";
       featuresBtn.textContent = "Features";
       featureImg.classList.remove("blur");
     } else {
@@ -49,7 +49,7 @@ function toggleFeatureMenu(event) {
       menu.style.display = "block";
       menu.classList.remove("opacity");
       menu.classList.add("feature-menu-active");
-      buyBtn.style.display = "none";
+      contactBtn.style.display = "none";
       featuresBtn.textContent = "Close";
       featureImg.classList.add("blur");
     }
@@ -58,7 +58,7 @@ function toggleFeatureMenu(event) {
   function closeFeatureMenu(event) {
     const feature = event.currentTarget.closest(".feature");
     const menu = feature.querySelector(".feature-menu");
-    const buyBtn = feature.querySelector(".btn1");
+    const contactBtn = feature.querySelector(".btn1");
     const featuresBtn = feature.querySelector(".btn2");
   
     menu.classList.remove("feature-menu-active");
@@ -73,7 +73,7 @@ function toggleFeatureMenu(event) {
       { once: true }
     );
   
-    buyBtn.style.display = "inline-block";
+    contactBtn.style.display = "inline-block";
     featuresBtn.textContent = "Features";
     feature.querySelector(".feature-img").classList.remove("blur");
   }

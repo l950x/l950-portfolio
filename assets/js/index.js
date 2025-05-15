@@ -1,39 +1,64 @@
-function toggleActive(button) {
-  const buttons = document.querySelectorAll(".choice button");
-  const offerPrice = document.querySelector(".offer-price");
-  const tax = document.querySelector(".tax");
-  const duration = document.querySelector(".duration");
-  const buyButton = document.querySelector(".buy-link");
+document.querySelectorAll(".project").forEach((project) => {
+  const infoBtn = project.querySelector(".info-btn");
+  const panel = project.querySelector(".info-panel");
+  const closeBtn = project.querySelector(".close-btn");
 
-  buttons.forEach((btn) => {
-    if (btn === button) {
-      btn.classList.toggle("active");
+  function closePanel() {
+    panel.classList.remove("info-panel-active");
+    panel.classList.add("opacity");
+
+    panel.addEventListener(
+      "animationend",
+      () => {
+        panel.classList.remove("opacity");
+        panel.style.display = "none";
+      },
+      { once: true }
+    );
+
+    infoBtn.textContent = "INFO";
+    infoBtn.classList.remove("active");
+  }
+
+  function openPanel() {
+    panel.style.display = "block";
+    panel.classList.add("info-panel-active");
+    infoBtn.textContent = "CLOSE";
+    infoBtn.classList.add("active");
+  }
+
+  infoBtn.addEventListener("click", () => {
+    const isActive = panel.classList.contains("info-panel-active");
+
+    document
+      .querySelectorAll(".project .info-panel-active")
+      .forEach((openPanelEl) => {
+        if (openPanelEl !== panel) {
+          openPanelEl.classList.remove("info-panel-active");
+          openPanelEl.classList.add("opacity");
+          openPanelEl.addEventListener(
+            "animationend",
+            () => {
+              openPanelEl.classList.remove("opacity");
+              openPanelEl.style.display = "none";
+            },
+            { once: true }
+          );
+
+          const otherBtn = openPanelEl
+            .closest(".project")
+            .querySelector(".info-btn");
+          otherBtn.textContent = "INFO";
+          otherBtn.classList.remove("active");
+        }
+      });
+
+    if (isActive) {
+      closePanel();
     } else {
-      btn.classList.remove("active");
+      openPanel();
     }
   });
 
-  const activeButton = document.querySelector(".choice button.active");
-  if (activeButton) {
-    const [durationText, price] = activeButton.innerText.split("\n");
-    offerPrice.textContent = `${price}`;
-    document.querySelector(
-      ".duration span"
-    ).textContent = `Duration: ${durationText}`;
-
-    let newHref;
-    switch (activeButton.id) {
-      case "first":
-        newHref = "https://google.com/1";
-        break;
-      case "second":
-        newHref = "https://google.com/2";
-        break;
-      case "third":
-        newHref = "https://google.com/3";
-        break;
-      default:
-    }
-    buyButton.href = newHref;
-  }
-}
+  closeBtn.addEventListener("click", closePanel);
+});

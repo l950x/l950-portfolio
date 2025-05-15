@@ -254,7 +254,7 @@ a {
 
 .thirdbody {
   padding: 90px 10px;
-  height: 100vh;
+  height: 100%;
 }
 
 .thirdbody h1 {
@@ -362,7 +362,7 @@ a {
   opacity: 0.4;
   transition: filter 0.3s ease, opacity 0.3s ease;
 }
-#buy-btn {
+#contact-btn {
   display: inline-block;
 }
 .opacity {
@@ -372,7 +372,7 @@ a {
   display: inline-block;
 }
 
-.feature-menu-active #buy-btn {
+.feature-menu-active #contact-btn {
   display: none;
 }
 
@@ -402,57 +402,66 @@ a {
   height: 70vh;
   margin-bottom: 3rem;
 }
-
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+}
 .fouthbody h1 {
   text-align: center;
   margin-bottom: 2rem;
   color: white;
 }
 
-.offer {
+.project {
   -webkit-backdrop-filter: blur(5px);
   color: white;
   backdrop-filter: blur(10px);
   border: 2px solid var(--first-color);
-  margin: auto;
+  margin: 0 3rem;
   width: 350px;
-  height: 495px;
+  height: 500px;
   border-radius: 10px;
   padding: 1rem;
   margin-bottom: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.offer-title {
+.project-title {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
-.offer-price {
+.project-year {
   line-height: 1;
   font-size: 1.4rem;
   font-weight: bold;
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
 }
-.offer-text {
+.project-text {
   font-size: 1.2rem;
   line-height: 1;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
-.offer-price span {
+.project-year span {
   font-size: 1.1rem;
   font-weight: normal;
 }
-.duration {
-  font-size: 1.2rem;
+.project-subtitle {
+  font-size: 1.1rem;
+  /* text-align: center; */
 }
 
-.tax {
+.project-icon {
+  display: flex;
+  align-items: center;
+  height: 100%;
   font-size: 0.8rem;
   margin-bottom: 0.8rem;
+  margin-top: 0.2rem;
 }
-.choice {
+
+.project-btn-ctn {
   display: flex;
   flex-direction: row;
   border-left: 2px solid var(--first-color);
@@ -463,7 +472,7 @@ a {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-.choice button {
+.project-btn-ctn button {
   color: white;
   border: 1px solid var(--first-color);
   line-height: 1.2;
@@ -481,7 +490,7 @@ a {
   transition: font-weight 0.1s, box-shadow 0.3s;
 }
 
-.buy {
+.contact {
   border: 1px solid transparent;
   color: rgb(0, 0, 0);
   width: 100%;
@@ -495,7 +504,7 @@ a {
   font-weight: bold;
   font-family: inherit;
 }
-.offer-pic img {
+.project-pic img {
   margin: 0 auto;
   display: block;
   width: 80%;
@@ -509,7 +518,7 @@ a {
   transition: font-weight 0.1s, box-shadow 0.3s;
 }
 
-.buy:hover {
+.contact:hover {
   background: var(--first-color);
   color: white;
   transition: 0.3s ease-in-out;
@@ -602,4 +611,42 @@ a {
   background: var(--first-color);
   color: white;
   transition: 0.3s ease-in-out;
+}
+
+.info-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 100%; */
+  height: 60%;
+  background: #000000;
+  color: white;
+  z-index: 100;
+  display: none;
+  animation: fade-in2 0.3s ease;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.info-panel-active {
+  display: block !important;
+}
+
+.opacity {
+  animation: fade-out2 0.3s ease;
+}
+
+.info-content {
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+  font-size: 1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
